@@ -1,0 +1,1679 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-09-26T10:24:15.263Z",
+        "user": 3,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "проверка неопубликованного",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-09-28T07:03:34.853Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "KotInnokentii@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Owner\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-09-28T07:15:20.629Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "KotInnokentii@yandex.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-09-29T11:55:25.382Z",
+        "user": 3,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Moderators",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-09-29T11:56:06.122Z",
+        "user": 3,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Moderators",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-09-29T13:35:23.565Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-09-29T13:35:23.571Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "KotInnokentii@yandex.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-09-29T13:41:25.224Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-09-29T13:53:04.303Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-09-29T14:03:23.701Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "8",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-09-29T14:03:23.704Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-09-29T14:03:32.200Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "Еще сообщение",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-09-29T14:03:32.223Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-09-29T14:03:32.481Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "Сообщение 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-09-29T14:03:32.483Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "Сообщение экспериментальное",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-09-29T14:12:07.502Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Сообщение 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-09-29T14:12:07.505Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-09-29T14:19:52.030Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "10",
+        "object_repr": "konov@tutamail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-09-29T14:19:52.035Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "9",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-09-29T14:57:59.683Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-09-29T15:49:12.252Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "14",
+        "object_repr": "Еще сообщение от коновала",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-09-29T15:49:12.255Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "13",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-09-29T15:49:12.256Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-09-29T15:49:18.631Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "12",
+        "object_repr": "konov@tutamail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-09-29T15:49:18.733Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "11",
+        "object_repr": "konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-09-29T18:15:25.576Z",
+        "user": 3,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "konov@tutamail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-09-29T18:29:50.849Z",
+        "user": 3,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "konov@tutamail.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-09-29T18:35:20.721Z",
+        "user": 3,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "Moderators",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-09-30T08:52:33.914Z",
+        "user": 3,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Рассылка 13 от konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-09-30T08:52:33.924Z",
+        "user": 3,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "Рассылка 12 от konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-09-30T08:52:33.926Z",
+        "user": 3,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "Рассылка 11 от konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-09-30T08:52:33.928Z",
+        "user": 3,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "Рассылка 10 от konovalex@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-09-30T08:52:45.034Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "16",
+        "object_repr": "Сообщение 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-09-30T08:52:45.038Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "15",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-09-30T09:06:46.252Z",
+        "user": 3,
+        "content_type": 12,
+        "object_id": "17",
+        "object_repr": "Сообщение 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-09-30T09:06:56.779Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "15",
+        "object_repr": "Кот Иннокентй (KotInnokentii@yandex.ru)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-09-30T09:06:56.785Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "14",
+        "object_repr": "Алексей Коноваленко 2 адрес (konov@tutamail.com)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-09-30T09:06:56.786Z",
+        "user": 3,
+        "content_type": 11,
+        "object_id": "13",
+        "object_repr": "Алексей Коноваленко 2 адрес (konov@tutamail.com)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-09-30T09:23:34.421Z",
+        "user": 3,
+        "content_type": 13,
+        "object_id": "18",
+        "object_repr": "Рассылка 18 от konovalex@mail.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Start time\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 6,
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Категория",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Категория",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Категория",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Категория",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add Товар",
+        "content_type": 8,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change Товар",
+        "content_type": 8,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete Товар",
+        "content_type": 8,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view Товар",
+        "content_type": 8,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add django job",
+        "content_type": 9,
+        "codename": "add_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change django job",
+        "content_type": 9,
+        "codename": "change_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete django job",
+        "content_type": 9,
+        "codename": "delete_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view django job",
+        "content_type": 9,
+        "codename": "view_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add django job execution",
+        "content_type": 10,
+        "codename": "add_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change django job execution",
+        "content_type": 10,
+        "codename": "change_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete django job execution",
+        "content_type": 10,
+        "codename": "delete_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view django job execution",
+        "content_type": 10,
+        "codename": "view_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add client",
+        "content_type": 11,
+        "codename": "add_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change client",
+        "content_type": 11,
+        "codename": "change_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete client",
+        "content_type": 11,
+        "codename": "delete_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view client",
+        "content_type": 11,
+        "codename": "view_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add message",
+        "content_type": 12,
+        "codename": "add_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change message",
+        "content_type": 12,
+        "codename": "change_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete message",
+        "content_type": 12,
+        "codename": "delete_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view message",
+        "content_type": 12,
+        "codename": "view_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add mailing",
+        "content_type": 13,
+        "codename": "add_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change mailing",
+        "content_type": 13,
+        "codename": "change_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete mailing",
+        "content_type": 13,
+        "codename": "delete_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view mailing",
+        "content_type": 13,
+        "codename": "view_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add mailing attempt",
+        "content_type": 14,
+        "codename": "add_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change mailing attempt",
+        "content_type": 14,
+        "codename": "change_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete mailing attempt",
+        "content_type": 14,
+        "codename": "delete_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view mailing attempt",
+        "content_type": 14,
+        "codename": "view_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Может просматривать любые рассылки",
+        "content_type": 13,
+        "codename": "can_view_any_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Может отключать рассылки",
+        "content_type": 13,
+        "codename": "can_disable_mailings"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Moderators",
+        "permissions": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            58,
+            57,
+            22,
+            23
+        ]
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "users",
+        "model": "customuser"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "catalog",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "catalog",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojob"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojobexecution"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "mail",
+        "model": "client"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "mail",
+        "model": "message"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "mail",
+        "model": "mailing"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "mail",
+        "model": "mailingattempt"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "g1jq0x6djobvvzxholcaipyejae7zjpp",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSE8OjxcuvcbyMCAVA0kpV0Z_12bdKHbe865LxZwW2vYRl7CTOzMJDv9bhHTI7cd0B3brfPU27rMke8KP-jg1075eTncv4OKo35rHVXMCJZSKZqsc-CMFD5rKG5CFMaCBgJhExWZlHHRKjM5CUaQ98qz9wfkgDcs:1subD7:vHWh2kNQMrO1qvGc-yDbc51uGf6hjjJbY8woJoYbINw",
+        "expire_date": "2024-10-12T17:26:25.655Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vf08uo6fyel8ep0ohv5ric0rgzme2v6n",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSE8OjxcuvcbyMCAVA0kpV0Z_12bdKHbe865LxZwW2vYRl7CTOzMJDv9bhHTI7cd0B3brfPU27rMke8KP-jg1075eTncv4OKo35rHVXMCJZSKZqsc-CMFD5rKG5CFMaCBgJhExWZlHHRKjM5CUaQ98qz9wfkgDcs:1suXJI:bNKU62memoLUKlYONdDf7_J9SJr763KIO77CZ8o3x0g",
+        "expire_date": "2024-10-12T13:16:32.883Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wawnruun60oodc19stc2jye7i1rdf44i",
+    "fields": {
+        "session_data": ".eJxVjMsOgjAQRf-la9O0DAPFpXu_oZkXghpIKKyM_64kLHR7zzn35TJt65C3Ykse1Z0duNPvxiQPm3agd5pus5d5WpeR_a74gxZ_ndWel8P9OxioDN-6rmrsAQHaJA0gWtIGQldFianuKqAInRKycAyGKMYaUPoWNZAxq3t_ALO0N8Q:1svGc1:dQRH7yiNqdCjd3YaVCKU1s6z0PpgLLJ3s0nEm7wmI0Q",
+        "expire_date": "2024-10-14T13:38:53.945Z"
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$XgKOEZgyqpHHKaIFgqcM4K$SLPV3nuWJ41gzRNJQXbHcyw22vBhfohNA8ZLNsBU/vs=",
+        "last_login": "2024-09-30T13:38:37.009Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-26T09:05:11.865Z",
+        "email": "konovalex@mail.ru",
+        "avatar": "",
+        "phone_number": "89644415067",
+        "country": "Россия",
+        "email_verified": true,
+        "email_verification_token": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$bYXbShkrktCdig3SqL2iHq$lZvaVt2ResWCmlwVu7d5+evRnWNyn+RQOczf9r63ezc=",
+        "last_login": "2024-09-30T12:20:07.259Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-26T09:07:42.938Z",
+        "email": "KotInnokentii@yandex.ru",
+        "avatar": "",
+        "phone_number": "",
+        "country": "",
+        "email_verified": true,
+        "email_verification_token": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$X5VkEaC930JISbFZ9A7DgM$KfFSYgyGPG8AtjVspGfhkaj3HExioUkFPfwJeb2BDHY=",
+        "last_login": "2024-09-30T13:38:53.943Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-09-26T10:22:41.300Z",
+        "email": "admin@admin.com",
+        "avatar": "",
+        "phone_number": null,
+        "country": null,
+        "email_verified": true,
+        "email_verification_token": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$hGBfq1ZD4d2EZhftQdvc4h$72m1GFMeB72euZkA0g8uLwFRs10kBE2Zo+NddFWJFQo=",
+        "last_login": "2024-09-30T06:46:37.880Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-29T10:30:05Z",
+        "email": "konov@tutamail.com",
+        "avatar": "",
+        "phone_number": null,
+        "country": null,
+        "email_verified": true,
+        "email_verification_token": "",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jCpJk0ovtTLIdol5mRcTf6$MNuhrFN+DOVOlOvj64rSBewbzbXkUsxNqk3LxnEedmg=",
+        "last_login": "2024-09-30T09:10:23.085Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-09-30T09:09:39.114Z",
+        "email": "konovalenko_svetlana_al@mail.ru",
+        "avatar": "",
+        "phone_number": "",
+        "country": "",
+        "email_verified": true,
+        "email_verification_token": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+        "title": "Польза грибов для здоровья",
+        "slug": "polza",
+        "content": "Грибы — это отличный источник витаминов группы B и антиоксидантов. Они укрепляют иммунную систему, снижают риск воспалений и поддерживают здоровье кожи и нервной системы.",
+        "preview": "catalog/previews/9.png",
+        "created_at": "2024-09-26T09:17:50.624Z",
+        "published_at": "2024-09-26T10:09:23.939Z",
+        "is_published": true,
+        "views_count": 5,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+        "title": "Популярные съедобные грибы в России",
+        "slug": "edible",
+        "content": "ПРОВЕРКА МОДЕРАЦИИ, МОДЕРАТОР МОЖЕТ ИСПРАВЛЯТЬ. Наиболее популярные грибы в России — это белый гриб, подберёзовик, опята и лисички. Эти виды часто используются в традиционных блюдах, таких как супы, соусы и жаркое.",
+        "preview": "catalog/previews/10.png",
+        "created_at": "2024-09-26T09:20:45.871Z",
+        "published_at": "2024-09-26T10:12:12.726Z",
+        "is_published": true,
+        "views_count": 5,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+        "title": "Как собирать грибы безопасно",
+        "slug": "safety",
+        "content": "Собираясь на \"тихую охоту\", важно знать, какие грибы съедобны. Никогда не собирайте неизвестные виды и проверяйте грибы с помощью справочников или приложений.",
+        "preview": "catalog/previews/5.png",
+        "created_at": "2024-09-26T09:21:33.466Z",
+        "published_at": "2024-09-26T11:23:26.756Z",
+        "is_published": true,
+        "views_count": 5,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+        "title": "Интересные факты о грибах",
+        "slug": "interest",
+        "content": "Грибы — это не растения и не животные, они относятся к отдельному царству. Они могут расти в самых суровых условиях и способны перерабатывать органику в почву.",
+        "preview": "catalog/previews/7.png",
+        "created_at": "2024-09-26T09:22:08.515Z",
+        "published_at": "2024-09-28T10:20:47.663Z",
+        "is_published": true,
+        "views_count": 3,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+        "title": "Грибы в кулинарии",
+        "slug": "coocking",
+        "content": "Грибы — универсальный ингредиент, который добавляет глубину вкуса в блюда. Их можно жарить, тушить, запекать или использовать для приготовления соусов и начинок. Грибы",
+        "preview": "catalog/previews/8.png",
+        "created_at": "2024-09-26T09:22:54.432Z",
+        "published_at": "2024-09-26T10:17:42.462Z",
+        "is_published": true,
+        "views_count": 4,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+        "title": "Ежи и их привычки",
+        "slug": "ez",
+        "content": "Ежи — это милые ночные создания, известные своим колючим «обмундированием». Они активны в основном ночью, что помогает им избегать хищников. В основном ежи питаются насекомыми, улитками и даже ягодами. Удивительно, но ежи могут свертываться в клубок, чтобы защититься от опасности.",
+        "preview": "catalog/previews/1.png",
+        "created_at": "2024-09-26T09:33:59.132Z",
+        "published_at": "2024-09-26T10:12:59.701Z",
+        "is_published": true,
+        "views_count": 7,
+        "category": null,
+        "created_by": 2
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+        "title": "Где обитают ежи",
+        "slug": "ezs",
+        "content": "Ежи предпочитают смешанные леса, кустарники и даже городские парки. Эти животные любят прятаться в густой траве или под опавшими листьями. Их можно встретить в Европе, Азии и даже в некоторых частях Африки. К сожалению, привычные места обитания ежей становятся все менее доступными из-за человеческой активности.",
+        "preview": "catalog/previews/2.png",
+        "created_at": "2024-09-26T09:34:33.936Z",
+        "published_at": "2024-09-26T10:12:40.722Z",
+        "is_published": true,
+        "views_count": 7,
+        "category": null,
+        "created_by": 2
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+        "title": "Уникальные особенности",
+        "slug": "ezzz",
+        "content": "Ежи обладают уникальными адаптациями: их колючки защищают от хищников, а длинный нос позволяет находить пищу. Интересно, что ежи могут переживать зимнюю спячку. За это время их метаболизм замедляется, и они могут впадать в глубокий сон, используя запасы жира для выживания.",
+        "preview": "catalog/previews/3.png",
+        "created_at": "2024-09-26T09:35:02.281Z",
+        "published_at": "2024-09-26T10:13:13.910Z",
+        "is_published": true,
+        "views_count": 1,
+        "category": null,
+        "created_by": 2
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+        "title": "Ежи как домашние питомцы",
+        "slug": "ezfv",
+        "content": "Некоторые люди решают завести ежей в качестве домашних питомцев. Они достаточно неприхотливы, но требуют специальных условий содержания. Важно обеспечить ежам просторный вольер и разнообразное питание. Эти существа могут быть милыми и забавными, но их колючки требуют осторожности при обращении.",
+        "preview": "catalog/previews/загружено.png",
+        "created_at": "2024-09-26T09:35:41.251Z",
+        "published_at": "2024-09-26T10:09:33.890Z",
+        "is_published": true,
+        "views_count": 5,
+        "category": null,
+        "created_by": 2
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+        "title": "Защита ежей",
+        "slug": "ezfvf",
+        "content": "К сожалению, популяция ежей сокращается из-за уничтожения их среды обитания и автомобилей. Чтобы помочь ежам, стоит сохранять их естественные местообитания, устанавливать специальные дорожные знаки и не забывать об их защите в садах. Наша забота о природе может спасти этих удивительных существ!",
+        "preview": "catalog/previews/4.png",
+        "created_at": "2024-09-26T09:36:16.543Z",
+        "published_at": "2024-09-26T10:09:37.909Z",
+        "is_published": true,
+        "views_count": 9,
+        "category": null,
+        "created_by": 2
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+        "title": "проверка товара неопубликованного",
+        "slug": "chech",
+        "content": "проверка проверка проверка проверка",
+        "preview": "catalog/previews/images333_9Qao28n.jpg",
+        "created_at": "2024-09-26T10:20:29.522Z",
+        "published_at": null,
+        "is_published": false,
+        "views_count": 2,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 13,
+    "fields": {
+        "title": "Удивительная архитектура бобров",
+        "slug": "arch",
+        "content": "Бобры известны не только своей деятельностью, но и великолепной архитектурой. Эти грызуны строят плотины, используя деревья, ветки и грязь, чтобы создать пруды, в которых могут жить. Плотины помогают контролировать уровень воды и защищают их от хищников. Интересно, что бобры могут строить плотины длиной до 800 метров! Их навыки строительства вдохновляют ученых, которые изучают, как природа создает устойчивые экосистемы.",
+        "preview": "catalog/previews/11.png",
+        "created_at": "2024-09-29T12:30:40.366Z",
+        "published_at": "2024-09-29T12:30:40.366Z",
+        "is_published": true,
+        "views_count": 1,
+        "category": null,
+        "created_by": 4
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 14,
+    "fields": {
+        "title": "Питание бобров: что они едят?",
+        "slug": "ff",
+        "content": "Бобры — травоядные животные, и их рацион состоит в основном из древесины и коры деревьев. Они предпочитают такие деревья, как осина, береза и ива. Зимой, когда доступ к свежей пище ограничен, бобры запасают ветки, чтобы иметь возможность питаться в холодное время года. Интересно, что их зубы растут всю жизнь, и бобры постоянно грызут древесину, чтобы поддерживать их в нужной форме.",
+        "preview": "catalog/previews/14.png",
+        "created_at": "2024-09-29T12:31:08.448Z",
+        "published_at": "2024-09-29T12:31:08.448Z",
+        "is_published": true,
+        "views_count": 1,
+        "category": null,
+        "created_by": 4
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 15,
+    "fields": {
+        "title": "Социальная жизнь бобров",
+        "slug": "social",
+        "content": "Бобры — очень социальные животные, которые живут в семьях, называемых \"колониями\". В каждой колонии может быть от 4 до 12 бобров, включая взрослых особей и их потомство. Эти колонии активно работают вместе, чтобы строить плотины и убежища, а также охранять свои территории от других бобров. Их совместная деятельность укрепляет социальные связи и помогает обеспечить безопасность всей семьи.",
+        "preview": "catalog/previews/15.png",
+        "created_at": "2024-09-29T12:31:36.690Z",
+        "published_at": "2024-09-29T12:31:36.690Z",
+        "is_published": true,
+        "views_count": 2,
+        "category": null,
+        "created_by": 4
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 16,
+    "fields": {
+        "title": "Бобры как экосистемные инженеры",
+        "slug": "eco",
+        "content": "Бобры играют важную роль в экосистемах, в которых они обитают. Их плотины создают новые водоемы, которые становятся домом для множества других животных и растений. Это также помогает поддерживать уровень грунтовых вод и предотвращает эрозию почвы. Благодаря своей деятельности бобры способствуют увеличению биоразнообразия и укреплению экосистем, что делает их незаменимыми участниками природы.",
+        "preview": "catalog/previews/16.png",
+        "created_at": "2024-09-29T12:31:58.686Z",
+        "published_at": "2024-09-29T12:31:58.686Z",
+        "is_published": true,
+        "views_count": 5,
+        "category": null,
+        "created_by": 4
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 17,
+    "fields": {
+        "title": "Защита бобров: угроза вымирания",
+        "slug": "protect",
+        "content": "Несмотря на свою важную роль в экосистеме, бобры сталкиваются с угрозами вымирания. Охота, разрушение их естественной среды обитания и изменение климата негативно влияют на их численность. Многие страны начали программы защиты бобров, чтобы сохранить их популяцию и экосистемы, которые они помогают поддерживать. Применение устойчивых практик и охрана их сред обитания — ключ к выживанию этих удивительных животных.",
+        "preview": "catalog/previews/12_VQvlWMs.png",
+        "created_at": "2024-09-29T12:32:24.572Z",
+        "published_at": "2024-09-29T12:32:24.572Z",
+        "is_published": true,
+        "views_count": 21,
+        "category": null,
+        "created_by": 4
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 18,
+    "fields": {
+        "title": "Козино поселка \"Путь Ильича\"",
+        "slug": "kozinoa",
+        "content": "Не подумайте, что мы приглашаем играть на деньги!  Игра на деньги давно запрещена нашим законодательством. В козино (проверочное слова - коза) мы играем исключительно на коз.   Коз Вы можете приобрести на входе в козино по льготной цене 20000 тысяч за 1 козу. Также в качестве более мелкого средства играть можно на куриц по курсу 1 коза = 40 кур.    Также в нашем козино можно выпить, спеть в караоке и покурить кальян. Имеется и виртуальная версия козино - игра идет на крипокоз и крипокур.",
+        "preview": "catalog/previews/34.png",
+        "created_at": "2024-09-29T16:40:53.351Z",
+        "published_at": "2024-09-29T17:26:06.196Z",
+        "is_published": true,
+        "views_count": 1,
+        "category": null,
+        "created_by": 1
+    }
+},
+{
+    "model": "mail.client",
+    "pk": 16,
+    "fields": {
+        "email": "KotInnokentii@yandex.ru",
+        "full_name": "Кот Иннокентй",
+        "comment": "Самый уважаемый клиент",
+        "owners": [
+            1
+        ]
+    }
+},
+{
+    "model": "mail.client",
+    "pk": 17,
+    "fields": {
+        "email": "konov@tutamail.com",
+        "full_name": "Алексей Коноваленко 2 адрес",
+        "comment": "Мой доп. адрес",
+        "owners": [
+            1
+        ]
+    }
+},
+{
+    "model": "mail.client",
+    "pk": 18,
+    "fields": {
+        "email": "konov@tutamail.com",
+        "full_name": "Алексей Коноваленко доп адрес",
+        "comment": "Клиент",
+        "owners": [
+            2
+        ]
+    }
+},
+{
+    "model": "mail.client",
+    "pk": 19,
+    "fields": {
+        "email": "konovalex@mail.ru",
+        "full_name": "Алексей Коноваленко",
+        "comment": "Мейл",
+        "owners": [
+            2
+        ]
+    }
+},
+{
+    "model": "mail.message",
+    "pk": 18,
+    "fields": {
+        "subject": "ОТ КОНОВАЛЕКС",
+        "body": "ПРОВЕРКА СООБЩЕНИЕ 1",
+        "owner": 1
+    }
+},
+{
+    "model": "mail.mailing",
+    "pk": 30,
+    "fields": {
+        "start_time": "2024-09-30T21:27:00Z",
+        "frequency": "daily",
+        "status": "running",
+        "message": 18,
+        "owner": 1,
+        "clients": [
+            16
+        ]
+    }
+},
+{
+    "model": "mail.mailing",
+    "pk": 31,
+    "fields": {
+        "start_time": "2024-09-29T21:27:00Z",
+        "frequency": "daily",
+        "status": "running",
+        "message": 18,
+        "owner": 1,
+        "clients": [
+            16
+        ]
+    }
+},
+{
+    "model": "mail.mailingattempt",
+    "pk": 8,
+    "fields": {
+        "mailing": 31,
+        "timestamp": "2024-09-30T11:26:36.732Z",
+        "status": "successful",
+        "response": "",
+        "owner": null
+    }
+},
+{
+    "model": "mail.mailingattempt",
+    "pk": 9,
+    "fields": {
+        "mailing": 31,
+        "timestamp": "2024-09-30T11:26:37.474Z",
+        "status": "successful",
+        "response": "",
+        "owner": null
+    }
+}
+]
