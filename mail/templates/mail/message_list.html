@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Список сообщений</h2>
+  <a href="{% url 'mail:message_create' %}">Создать сообщение</a>
+  <ul>
+    {% for message in messages %}
+      <li>
+        {{ message }}
+        <a href="{% url 'mail:message_update' message.pk %}">Редактировать</a>
+        <form action="{% url 'mail:message_delete' message.pk %}" method="post" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit">Удалить</button>
+        </form>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="form-actions">
+      <a href="{% url 'mail:mailing_home' %}" class="btn btn-secondary">Назад</a>
+  </div>
+{% endblock %}

@@ -19,7 +19,7 @@ class RegisterView(CreateView):
 
     def form_valid(self, form):
         user = form.save()
-        user.generate_verification_token()  # Генерируем токен перед отправкой email
+        user.generate_verification_token()
         user.send_verification_email()
         return super().form_valid(form)
 
@@ -28,7 +28,7 @@ class EmailVerificationView(View):
         user = get_object_or_404(CustomUser, pk=user_id)
         if user.email_verification_token == token:
             user.email_verified = True
-            user.email_verification_token = ""  # Очистить токен после подтверждения
+            user.email_verification_token = ""
             user.save()
             return render(request, 'users/email_verified.html')
         else:
@@ -48,4 +48,4 @@ class LoginView(AuthLoginView):
     authentication_form = CustomAuthenticationForm
 
 class LogoutView(AuthLogoutView):
-    next_page = reverse_lazy('catalog:index')  # Укажите здесь страницу, на которую вы хотите перенаправить после выхода
+    next_page = reverse_lazy('catalog:index')

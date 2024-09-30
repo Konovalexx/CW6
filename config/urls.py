@@ -22,5 +22,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls', namespace='users')),  # Включение URL для приложения users
-    path('', include('catalog.urls', namespace='catalog')),
+    path('', include('catalog.urls', namespace='catalog')),      # Включение URL для приложения catalog
+    path('mail/', include('mail.urls', namespace='mail')),      # Включение URL для приложения mail
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

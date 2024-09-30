@@ -13,11 +13,6 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ product.title }}</h5>
                     <p class="card-text">{{ product.content|truncatewords:20 }}</p>
-                    {% if product.price %}
-                    <p class="card-text"><strong>Цена:</strong> {{ product.price }} руб.</p>
-                    {% else %}
-                    <p class="card-text text-muted">Цена не указана</p>
-                    {% endif %}
                     <a href="{% url 'catalog:product_detail' product.slug %}" class="btn btn-primary">Подробнее</a>
                 </div>
             </div>

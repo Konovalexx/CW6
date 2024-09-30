@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Мои черновики</h1>
+    <div class="row text-center">
+        {% for product in drafts %}
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                {% if product.preview %}
+                <a href="{% url 'catalog:product_detail' product.slug %}">
+                    <img src="{{ product.preview.url }}" class="card-img-top" alt="{{ product.title }}" style="height: 200px; object-fit: cover;">
+                </a>
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">{{ product.content|truncatewords:20 }}</p>
+                    <a href="{% url 'catalog:product_detail' product.slug %}" class="btn btn-primary">Подробнее</a>
+                    <a href="{% url 'catalog:product_update' product.slug %}" class="btn btn-secondary">Редактировать</a>
+                    <a href="{% url 'catalog:product_delete' product.slug %}" class="btn btn-danger">Удалить</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% if drafts.count == 0 %}
+        <p>У вас нет черновиков.</p>
+    {% endif %}
+</div>
+{% endblock %}

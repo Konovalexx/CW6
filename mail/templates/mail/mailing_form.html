@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{% if form.instance.pk %}Редактировать{% else %}Создать{% endif %} рассылку</h2>
+  <form method="post" novalidate>
+    {% csrf_token %}
+
+    <div>
+      <label for="id_start_time">Время начала:</label>
+      {{ form.start_time }}
+      {% if form.start_time.errors %}
+        <div class="error">{{ form.start_time.errors }}</div>
+      {% endif %}
+    </div>
+
+    <div>
+      <label for="id_frequency">Частота:</label>
+      {{ form.frequency }}
+      {% if form.frequency.errors %}
+        <div class="error">{{ form.frequency.errors }}</div>
+      {% endif %}
+    </div>
+
+    <div>
+      <label for="id_status">Статус:</label>
+      {{ form.status }}
+      {% if form.status.errors %}
+        <div class="error">{{ form.status.errors }}</div>
+      {% endif %}
+    </div>
+
+    <div>
+      <label for="id_message">Сообщение:</label>
+      {{ form.message }}
+      {% if form.message.errors %}
+        <div class="error">{{ form.message.errors }}</div>
+      {% endif %}
+    </div>
+
+    <div>
+      <label for="id_clients">Клиенты:</label>
+      {{ form.clients }}
+      {% if form.clients.errors %}
+        <div class="error">{{ form.clients.errors }}</div>
+      {% endif %}
+    </div>
+
+    <button type="submit">Сохранить</button>
+  </form>
+
+  <div class="form-actions mt-3">
+    <a href="{% url 'mail:mailing_home' %}" class="btn btn-secondary">Назад</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Отчет о попытках рассылок{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Отчет о попытках рассылок</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Дата и время</th>
+                <th>Статус</th>
+                <th>Ответ</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attempt in attempts %}
+            <tr>
+                <td>{{ attempt.timestamp }}</td>
+                <td>{{ attempt.status }}</td>
+                <td>{{ attempt.response }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">Нет данных о попытках рассылок.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="my-4">Главная страница рассылок</h1>
+
+    <ul class="list-group mb-4">
+      <li class="list-group-item">
+        <a href="{% url 'mail:mailing_list' %}" class="text-decoration-none">Список рассылок</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:mailing_create' %}" class="text-decoration-none">Создать рассылку</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:client_list' %}" class="text-decoration-none">Список клиентов</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:client_create' %}" class="text-decoration-none">Создать клиента</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:message_list' %}" class="text-decoration-none">Список сообщений</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:message_create' %}" class="text-decoration-none">Создать сообщение</a>
+      </li>
+      <li class="list-group-item">
+        <a href="{% url 'mail:mailing_report' %}" class="text-decoration-none">Отчёт по рассылкам</a>  <!-- Добавленная ссылка -->
+      </li>
+    </ul>
+  </div>
+{% endblock %}

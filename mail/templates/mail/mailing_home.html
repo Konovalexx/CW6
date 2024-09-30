@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница рассылок{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Главная страница рассылок</h1>
+    <div class="list-group mt-3">
+        <a href="{% url 'mail:mailing_list' %}" class="list-group-item list-group-item-action">Список рассылок</a>
+        <a href="{% url 'mail:mailing_create' %}" class="list-group-item list-group-item-action">Создать рассылку</a>
+        <a href="{% url 'mail:client_list' %}" class="list-group-item list-group-item-action">Список клиентов</a>
+        <a href="{% url 'mail:client_create' %}" class="list-group-item list-group-item-action">Создать клиента</a>
+        <a href="{% url 'mail:message_list' %}" class="list-group-item list-group-item-action">Список сообщений</a>
+        <a href="{% url 'mail:message_create' %}" class="list-group-item list-group-item-action">Создать сообщение</a>
+
+        <!-- Кнопка для отображения отчета о попытках рассылок -->
+        <a href="{% url 'mail:mailing_report' %}" class="list-group-item list-group-item-action">Показать отчет о рассылках</a>
+    </div>
+</div>
+{% endblock %}

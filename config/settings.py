@@ -24,6 +24,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'catalog',
+    'django_apscheduler',
+    'mail.apps.MailConfig',  # Измените на конфигурацию приложения
 ]
 
 # Определение промежуточного ПО
@@ -120,3 +122,28 @@ from django.urls import reverse_lazy
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = reverse_lazy('catalog:product_list')
+
+# Настройки django_apscheduler
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s A"  # Формат даты и времени
+APSCHEDULER_RUN_NOW = True  # Запустить сразу же при старте приложения
+
+# Настройки логирования
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'INFO',
+        },
+        'mail': {  # Ваше приложение mail
+            'handlers': ['console'],
+            'level': 'INFO',
+        },
+    },
+}

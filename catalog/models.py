@@ -2,6 +2,9 @@ from django.db import models
 from django.utils.text import slugify
 from django.db import connection
 from django.conf import settings
+from django.core.exceptions import PermissionDenied
+from django.utils import timezone  # Импортируем для работы с временными метками
+
 
 class Category(models.Model):
     @classmethod
@@ -28,54 +31,46 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-class Product(models.Model):
-    @classmethod
-    def truncate_table_restart_id(cls):
-        with connection.cursor() as cursor:
-            cursor.execute(f'TRUNCATE TABLE {cls._meta.db_table} RESTART IDENTITY CASCADE')
 
+class Product(models.Model):
     title = models.CharField(
         max_length=255,
         verbose_name="Заголовок",
-        help_text="Введите заголовок товара:",
-        null=True,  # Разрешить null
-        blank=True,  # Разрешить пустое значение в формах
+        help_text="Введите заголовок статьи:",
+        null=True,
+        blank=True,
     )
     slug = models.SlugField(
         max_length=255,
         unique=True,
         verbose_name="URL-метка",
-        help_text="Введите URL-метку товара:",
-        null=True,  # Разрешить null
+        help_text="Введите URL-метку статьи:",
+        null=True,
     )
     content = models.TextField(
-        default='',  # Устанавливаем значение по умолчанию
+        default='',
         verbose_name="Содержимое",
-        help_text="Введите описание товара:",
+        help_text="Введите текст статьи:",
     )
     preview = models.ImageField(
         upload_to="catalog/previews",
         blank=True,
         null=True,
         verbose_name="Превью",
-        help_text="Загрузите изображение превью товара:",
+        help_text="Загрузите изображение превью статьи:",
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
-    is_published = models.BooleanField(default=True, verbose_name="Признак публикации")
+    published_at = models.DateTimeField(null=True, blank=True, verbose_name="Дата публикации")  # Новое поле
+    is_published = models.BooleanField(default=False, verbose_name="Признак публикации")
     views_count = models.PositiveIntegerField(default=0, verbose_name="Количество просмотров")
     category = models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,
         verbose_name="Категория",
-        help_text="Выберите категорию товара:",
+        help_text="Выберите категорию статьи:",
         blank=True,
         null=True,
         related_name="products",
-    )
-    price = models.IntegerField(
-        default=0,
-        verbose_name="Цена",
-        help_text="Введите цену товара:",
     )
     created_by = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -85,37 +80,21 @@ class Product(models.Model):
         null=True,
     )
 
+    class Meta:
+        verbose_name = "Статья"
+        verbose_name_plural = "Статьи"
+
     def save(self, *args, **kwargs):
-        if not self.slug:
+        if not self.slug and self.title:
             self.slug = slugify(self.title)
+
+        # Устанавливаем дату публикации, если товар опубликован
+        if self.is_published and not self.published_at:
+            self.published_at = timezone.now()  # Устанавливаем текущую дату и время
+        elif not self.is_published:
+            self.published_at = None  # Очищаем дату публикации, если статья не опубликована
+
         super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
-
-class ProductVersion(models.Model):
-    product = models.ForeignKey(
-        Product,
-        on_delete=models.CASCADE,
-        related_name='versions',
-        verbose_name="Продукт",
-    )
-    version_number = models.CharField(
-        max_length=50,
-        verbose_name="Номер версии",
-    )
-    version_name = models.CharField(
-        max_length=255,
-        verbose_name="Название версии",
-    )
-    is_current = models.BooleanField(
-        default=False,
-        verbose_name="Текущая версия",
-    )
-
-    class Meta:
-        verbose_name = "Версия продукта"
-        verbose_name_plural = "Версии продуктов"
-
-    def __str__(self):
-        return f"{self.product.title} - {self.version_name} ({self.version_number})"

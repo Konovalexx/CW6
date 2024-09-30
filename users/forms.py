@@ -9,23 +9,21 @@ class CustomUserCreationForm(UserCreationForm):
 
     class Meta:
         model = CustomUser
-        fields = ('username', 'email', 'password1', 'password2', 'avatar', 'phone_number', 'country')
+        fields = ('email', 'password1', 'password2', 'avatar', 'phone_number', 'country')
 
 class PasswordResetForm(forms.Form):
     email = forms.EmailField()
 
 class CustomAuthenticationForm(AuthenticationForm):
     username = forms.CharField(
-        label="Имя пользователя или Email",
+        label="Email",
         widget=forms.TextInput(attrs={'class': 'form-control'}),
     )
 
     def clean_username(self):
-        username_or_email = self.cleaned_data.get('username')
-        if '@' in username_or_email:
-            try:
-                user = CustomUser.objects.get(email=username_or_email)
-                return user.username
-            except CustomUser.DoesNotExist:
-                raise forms.ValidationError("Пользователь с таким email не найден.")
-        return username_or_email
+        email = self.cleaned_data.get('username')
+        try:
+            user = CustomUser.objects.get(email=email)
+            return user.email
+        except CustomUser.DoesNotExist:
+            raise forms.ValidationError("Пользователь с таким email не найден.")

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Отчёт по рассылкам</h1>
+
+    <h2>Статистика рассылок</h2>
+    <ul>
+        <li>Общее количество рассылок: {{ total_mailings }}</li>
+        <li>Количество активных рассылок: {{ active_mailings }}</li>
+        <li>Количество уникальных клиентов для рассылок: {{ unique_clients }}</li>
+    </ul>
+
+    <h2>Попытки рассылок</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Дата и время</th>
+                <th>Статус</th>
+                <th>Ответ сервера</th>
+                <th>Рассылка</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attempt in attempts %}
+            <tr>
+                <td>{{ attempt.timestamp }}</td>
+                <td>{{ attempt.status }}</td>
+                <td>{{ attempt.response }}</td>
+                <td>{{ attempt.mailing }}</td>  {# Выводим название рассылки #}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

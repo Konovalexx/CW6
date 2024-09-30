@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}СельхозРынок{% endblock %}</title>
+    <title>{% block title %}СельхозБлог{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -11,8 +11,11 @@
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
             <h5 class="my-0 mr-md-auto font-weight-normal">Поселок Путь Ильича</h5>
             <nav class="ms-5">
-                <a class="p-2 btn btn-outline-primary" href="{% url 'catalog:product_list' %}">Каталог</a>
+                <a class="p-2 btn btn-outline-primary" href="{% url 'catalog:product_list' %}">Каталог статей</a>
                 <a class="p-2 btn btn-outline-primary" href="{% url 'catalog:contacts' %}">Контакты</a>
+                {% if user.is_authenticated %}
+                    <a class="p-2 btn btn-outline-primary" href="{% url 'mail:mailing_home' %}">Рассылки</a> <!-- Ссылка на рассылки видна только аутентифицированным пользователям -->
+                {% endif %}
                 {% if user.is_authenticated %}
                     <span class="p-2">Привет, {{ user.email }}!</span>
                     <form action="{% url 'users:logout' %}" method="post" style="display:inline;">
@@ -27,7 +30,7 @@
 
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Путь Ильича</h1>
-            <p class="lead">Онлайн-платформа сельского рынка</p>
+            <p class="lead">Онлайн-платформа сельского блога</p>
         </div>
     </header>
 
@@ -43,7 +46,7 @@
                 <p>Привет!</p>
                 <small class="d-block mb-3 text-muted">&copy; 2024</small>
                 <small class="d-block mb-3 text-muted">
-                    Запрещается рекламировать казино, игры на деньги, криптовалюты, радары для обмана полиции и другие антизаконные действия.
+                    Запрещается писать про казино, игры на деньги, криптовалюты, радары для обмана полиции и другие антизаконные действия.
                 </small>
             </div>
             <div class="col-6 col-md">
@@ -53,7 +56,7 @@
                     <li><a class="text-muted" href="#">Рыбы</a></li>
                     <li><a class="text-muted" href="#">Экзотические животные</a></li>
                     <li><a class="text-muted" href="#">Птицы</a></li>
-                    <li><a class="text-muted" href="#">Земноводные и рептилии. Пока товаров нет</a></li>
+                    <li><a class="text-muted" href="#">Земноводные и рептилии</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md">

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Модерация статей</h1>
+
+    <div class="mb-3">
+        <a href="{% url 'catalog:product_create' %}" class="btn btn-primary">Создать новую статью</a>
+        <a href="{% url 'catalog:product_list' %}?my_articles=true" class="btn btn-secondary">Показать все мои статьи</a>
+        <a href="{% url 'catalog:draft_list' %}" class="btn btn-secondary">Мои черновики</a>
+    </div>
+
+    <div class="row text-center">
+        {% for product in products %}
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                {% if product.preview %}
+                <a href="{% url 'catalog:product_detail' product.slug %}">
+                    <img src="{{ product.preview.url }}" class="card-img-top" alt="{{ product.title }}" style="height: 200px; object-fit: cover;">
+                </a>
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">{{ product.content|truncatewords:20 }}</p>
+                    <p class="card-text"><small class="text-muted">Автор: {{ product.created_by.email }}</small></p>
+                    <a href="{% url 'catalog:product_detail' product.slug %}" class="btn btn-primary">Подробнее</a>
+                    <a href="{% url 'catalog:product_update' product.slug %}" class="btn btn-secondary">Редактировать</a>
+                    <form action="{% url 'catalog:product_delete' product.slug %}" method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Удалить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if not products %}
+        <p class="text-center">Нет статей для модерации.</p>
+    {% endif %}
+</div>
+{% endblock %}

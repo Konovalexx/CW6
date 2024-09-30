@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Список клиентов</h2>
+  <a href="{% url 'mail:client_create' %}">Создать клиента</a>
+  <ul>
+    {% for client in clients %}
+      <li>
+        {{ client.full_name }} ({{ client.email }}) - {{ client.comment }}
+        <a href="{% url 'mail:client_update' client.pk %}">Редактировать</a>
+        <form action="{% url 'mail:client_delete' client.pk %}" method="post" style="display:inline;">
+          {% csrf_token %}
+          <button type="submit">Удалить</button>
+        </form>
+      </li>
+    {% empty %}
+      <li>Нет клиентов.</li>
+    {% endfor %}
+  </ul>
+  <div class="form-actions">
+      <a href="{% url 'mail:mailing_home' %}" class="btn btn-secondary">Назад</a>
+  </div>
+{% endblock %}
